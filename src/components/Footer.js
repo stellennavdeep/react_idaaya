@@ -54,14 +54,14 @@ const Footer = ({}) => {
      <footer className="footer">
     	<div className="container">
 			{widgetTitle1['block-7'] ? (
-            <h1 className="" dangerouslySetInnerHTML={{ __html: widgetTitle1['block-7'].content }}></h1>
+            <div className="" dangerouslySetInnerHTML={{ __html: widgetTitle1['block-7'].content }}></div>
           ) : (
-            <p></p>
+            <h1></h1>
           )}
 	    	<div className="row">
 				<div className="footer_left">
 				{widgetTitle2['block-8'] ? (
-            <p className="" dangerouslySetInnerHTML={{ __html: widgetTitle2['block-8'].content }}></p>
+            <span className="" dangerouslySetInnerHTML={{ __html: widgetTitle2['block-8'].content }}></span>
           ) : (
             <p></p>
           )}
@@ -82,16 +82,14 @@ const Footer = ({}) => {
 					</div>
 				</div>
 			</div>
-			<div className="footer_bottom-container">
-      {footLink['block-10'] ? (
-          <div className="footer_bottom" dangerouslySetInnerHTML={{__html: footLink['block-10'].content}}></div>
-        ) :(
-          <div></div>
-        )
-      }
+			<div className="footer_bottom">
+      <ul className="navbar">
+						<li><Link to="/">CONTACT</Link></li>
+						<li><Link to="/">INSTAGRAM</Link></li>
+					</ul>
 			
 					{widgetTitle3['block-9'] ? (
-            <p className="" dangerouslySetInnerHTML={{ __html: widgetTitle3['block-9'].content }}></p>
+            <div dangerouslySetInnerHTML={{ __html: widgetTitle3['block-9'].content }}></div>
           ) : (
             <p></p>
           )}

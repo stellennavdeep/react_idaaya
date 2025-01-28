@@ -217,7 +217,7 @@ const HomepagePart = () => {
         </div>
       </section>
 
-      <section
+      {/* <section
         className="video-section"
         style={{
           backgroundImage: `url(${awardBG})`,
@@ -226,6 +226,13 @@ const HomepagePart = () => {
         <button className="video-btn">
           <img src="images/video-play.svg" alt="video" />
         </button>
+      </section> */}
+
+      <section className="video-section">       
+        <video width="100%" height="auto" autoPlay loop  playsInline poster="/images/brand-video.webp">
+        <source src="/images/Idaayavideomp.mp4" type="video/mp4" />
+            <source src="/images/Idaayavideo.mov" type="video/mov" />
+        </video>
       </section>
 
       <section className="home-secion4 page-section">

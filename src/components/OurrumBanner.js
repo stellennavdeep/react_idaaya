@@ -328,7 +328,7 @@ const OurrumBanner = () => {
                 <section className="section5 page-section">
                   <div className="container">
                     <div className="slider-container position-relative">
-                      <div className="row align-item-end">
+                      <div className="row_ align-item-end">
                         <div className="position-relative ourrum_textscroll">
                           <picture className="">
                             <img
